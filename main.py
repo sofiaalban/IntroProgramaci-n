@@ -60,7 +60,7 @@ if c<1:
   print("El divisor es mayor que el dividendo")
 else
   print("El divisor es mayor que el divisor")
-'''
+
 #ejercicio3
 inv=float(input("ingresa la cantidad a invertir"))
 int=float(input("ingresa el interes anual"))
@@ -72,3 +72,65 @@ elif 100000<formula>100000:
   print("rentabilidad baja")
 else:
   print("es una buena inversión") 
+
+#ejercicio1
+n=int(input("dato 1 "))
+m=int(input("dato 2 "))
+def suma (n,m):
+  sum=n+m
+  return sum
+print(suma(n, m))
+
+#ejercicio2
+n=int(input("dato 1 "))
+m=int(input("dato 2 "))
+def resta (n,m):
+  operación=n-m
+  return operación 
+print(resta(n, m))
+  
+#ejercicio3
+n=int(input("dato 1 "))
+m=int(input("dato 2 "))
+def división(n,m):
+  if m==0:
+    return "no se puede dividir entre 0"
+  else:
+    operación=(n/m)
+  return operación 
+print(división(n, m))
+'''
+#ejercicio4
+n=int(input("dato 1 "))
+m=int(input("dato 2 "))
+op=str(input("¿que operación deseas realizar?"))
+
+if op=="suma":
+  def suma (n,m):
+    sum=n+m
+    return sum
+  print(suma(n, m))
+
+elif op == "resta":
+  def resta (n,m):
+    operación=n-m
+    return operación 
+  print(resta(n, m))
+
+elif op=="multiplicación":
+  def multiplicación (n,m):
+    operación=n*m
+    return operación 
+  print(multiplicación(n, m))
+
+elif op=="división":
+   if m==0:
+    print ("no se puede dividir entre 0")
+   else:
+     def división(n,m):
+      operación=(n/m)
+      return operación 
+   print(división(n, m))
+
+else:
+  print("ah")
