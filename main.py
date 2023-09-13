@@ -99,7 +99,7 @@ def división(n,m):
     operación=(n/m)
   return operación 
 print(división(n, m))
-'''
+
 #ejercicio4
 n=int(input("dato 1 "))
 m=int(input("dato 2 "))
@@ -134,3 +134,29 @@ elif op=="división":
 
 else:
   print("ah")
+
+def marca(m,b):
+  m=x
+  b=y
+if marca.lower==nosy:
+  desc=(pe*(5/100))
+  return desc
+else:
+  return pe
+  pe=input(float("ingrese el precio del estereo "))
+  marca=input(str("ingrese la marca que sea del estereo"))
+  marca(m)
+  
+if pe>=2000000:
+  desc=(pe*(10/100))
+  valor=(pe-desc)
+else:
+  precio=pe
+ '''
+import random
+def adivina():
+  numero_secreto = random.randint(1, 100)
+  adivinado = False
+
+while not adivinado:
+  intento = int(input("adivina el número"))
